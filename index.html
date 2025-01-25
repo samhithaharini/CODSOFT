@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        function showConfirmation(event) {
+            event.preventDefault(); // Prevent form from submitting
+            alert("Your message has been submitted successfully!");
+            // Redirect to another page (success page)
+            window.location.href = 'success.html'; // Change 'success.html' to your target page
+        }
+    </script>
+    <style>
+        /* Global background color */
+        body {
+            background-color: #f2f2f22f; /* Pastel gray */
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header background color */
+        header {
+            background-color: #0fbdb4c4; /* Pastel peach */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .intro h1 {
+            font-size: 2.5em;
+        }
+
+        .intro p {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+
+        .btn {
+            background-color: #058197d7; /* Pastel pink */
+            padding: 10px 20px;
+            border: none;
+            color: white;
+            font-size: 1.1em;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #80ffced8; /* Slightly darker pink on hover */
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff; /* White background for sections */
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #333;
+        }
+
+        section ul {
+            list-style-type: none;
+        }
+
+        section ul li {
+            margin-bottom: 10px;
+        }
+
+        .skills-container .skill {
+            background-color: #99bdffd5; /* Pastel yellow for skills section */
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .project img {
+            width: 100%;
+            height: auto; /* Maintain aspect ratio */
+            max-height: 300px; /* Set a maximum height */
+            object-fit: cover; /* This ensures the image is cropped to fit within the specified height */
+        }
+
+        .section-divider {
+            border-top: 2px solid #ddd; /* Light gray line */
+            margin: 40px 0;
+        }
+
+        #skills {
+            background-color: #e8f9f3; /* Pastel green for skills section */
+        }
+
+        #open-source {
+            background-color: #28c2d6; /* Pastel purple for open-source section */
+        }
+
+        #projects {
+            background-color: #1abcd1; /* Pastel mint for projects section */
+        }
+
+
+        #contact {
+            background-color: #2bd8ca; /* Pastel light green for contact section */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#open-source">Open Source</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <div class="intro">
+                <h1>Hello! I'm Samhitha Harini..</h1>
+                <p>A passionate II-year student pursuing B.E in Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning(AIML) at Rathinam Technical Campus. </p>
+                
+                <div class="buttons">
+                    <a href="#contact" class="btn">Contact Me</a>
+                    <a href="C:\Users\user\Desktop\Internship projects\Portfolio\SAMHITHA RESUME.pdf.pdf" class="btn" download>See My Resume</a> <!-- Local resume file -->
+                </div>
+            </div>
+            <div class="image">
+                <img src="image.jpg.jpg" alt="Illustration">
+            </div>
+        </div>
+    </header>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>Java</h3>
+                <p>Experienced in building software projects using JAVA.</p>
+            </div>
+            <div class="skill">
+                <h3>PYTHON</h3>
+                <p>Proficient in creating interactive GUI based application using Python.</p>
+            </div>
+            <div class="skill">
+                <h3>Data Structures and Algorithms Using Python</h3>
+                <p>Skilled in developing real world application.</p>
+            </div>
+            <div class="skill">
+                <h3>HTML and CSS</h3>
+                <p>Experienced in creating a normal website as part in Front-end.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div> <!-- Divider line between sections -->
+
+    <section id="open-source">
+        <h2>Open Source</h2>
+        <p>Contributed to various open-source projects, including:</p>
+        <ul>
+            <li><a href="#">Project 1</a> - A personal assistant CHATBOT using JAVA.</li>
+            <li><a href="#">Project 2</a> - Created a LANDING PAGE for Catering Service.</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project Title 1: CHATBOT</h3>
+            <img src="project-1.png" alt="Project 1">
+            <p>This is a personal assistant which performs responding to basic greetings, generates random general things, jokes, and more! A chatbot is a computer program designed to simulate conversation with human users, typically through text or voice interactions. It uses artificial intelligence (AI) to understand user input and provide relevant responses. Chatbots are widely used in customer service, virtual assistants, and even personal projects for automation. They can be simple rule-based systems or advanced AI-driven models, making them versatile for various industries. </p>
+        </div>
+        <div class="project">
+            <h3>Project Title 2: LANDING PAGE</h3>
+            <img src="project-2.jpg" alt="Project 2">
+            <p>A Landing page for Catering Service built by HTML and CSS. A landing page is a standalone web page created for a specific marketing campaign or purpose. Its primary goal is to convert visitors into leads or customers by focusing on a single call-to-action (CTA), such as signing up, purchasing, or downloading something. Landing pages are often visually appealing, concise, and focused, ensuring the visitor's attention is drawn to the key message or offer.</p>
+        </div>
+    </section>
+   
+    <section id="contact">
+        <h2>Contact</h2>
+        <form onsubmit="showConfirmation(event)" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Samhitha. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
